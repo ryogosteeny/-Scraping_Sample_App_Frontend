@@ -1,0 +1,25 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "side main"
+    "side main";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 100%;
+}
+
+/*TODO　各エリアの背景色はエリアをわかりやすくする為だけの為良きタイミングで削除*/
+.grid__header {
+  background-color: orange;
+  grid-area: header;
+}
+
+.grid__side {
+  background-color: cornflowerblue;
+  grid-area: side;
+}
+
+.grid__main {
+  background-color: greenyellow;
+  grid-area: main;
+}
